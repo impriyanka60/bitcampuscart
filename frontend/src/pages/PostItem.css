@@ -1,0 +1,153 @@
+/* PostItem.css */
+body {
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.post-form {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.post-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.post-form input:focus,
+.post-form textarea:focus {
+  border-color: #5c6bc0;
+  outline: none;
+}
+
+.post-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.post-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5c6bc0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.post-form button:hover {
+  background-color: #3f51b5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .post-container {
+    padding: 20px 15px;
+  }
+
+  .post-form {
+    padding: 25px 20px;
+    max-width: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .post-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .post-form input,
+  .post-form textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 10px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post-container {
+    padding: 15px 10px;
+  }
+
+  .post-form {
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .post-form h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .post-form input,
+  .post-form textarea {
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+
+  .post-form textarea {
+    min-height: 70px;
+  }
+
+  .post-form button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .post-container {
+    padding: 10px 8px;
+  }
+
+  .post-form {
+    padding: 15px 12px;
+  }
+
+  .post-form h2 {
+    font-size: 16px;
+  }
+
+  .post-form input,
+  .post-form textarea {
+    padding: 10px 8px;
+  }
+}

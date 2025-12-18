@@ -1,0 +1,213 @@
+/* Login.css */
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.bit-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.login-box h1 {
+  margin-bottom: 5px;
+  font-size: 26px;
+  color: #333;
+}
+
+.login-box h1 span {
+  color: #1e88e5;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: white;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.icon {
+  color: #888;
+  font-size: 18px;
+}
+
+button {
+  background: #0e0e89;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left-side {
+    flex: none;
+    height: 40vh;
+    min-height: 250px;
+  }
+
+  .login-image {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .right-side {
+    flex: none;
+    padding: 20px;
+    background: #ffffff;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: none;
+    padding: 30px 20px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .login-box h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .left-side {
+    height: 30vh;
+    min-height: 200px;
+  }
+
+  .right-side {
+    padding: 15px;
+  }
+
+  .login-box {
+    padding: 20px 15px;
+  }
+
+  .bit-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .login-box h1 {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+  .tagline {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .input-group {
+    padding: 8px;
+  }
+
+  .input-group input {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding-left: 8px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .left-side {
+    height: 25vh;
+    min-height: 180px;
+  }
+
+  .login-box {
+    padding: 15px 10px;
+  }
+
+  .bit-logo {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+
+  .login-box h1 {
+    font-size: 18px;
+  }
+}
