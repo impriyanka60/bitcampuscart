@@ -16,11 +16,22 @@ app.get("/", (req, res) => {
 const productRoutes = require('./routes/productRoutes');
 // server.js
 const userRoutes = require('./routes/userRoutes');
+const messRoutes = require('./routes/messRoutes');
+const bussRoutes = require('./routes/bussRoutes');
+const networkRoutes = require("./routes/networkRoutes");
+const complaintRoutes = require("./routes/complaintRoutes");
+app.use("/api/complaints", complaintRoutes);
+
+
 
 app.use('/api/users', userRoutes);
 
 app.use('/api/products', productRoutes);
+app.use('/api/mess', messRoutes);
+app.use('/api/bus', bussRoutes);
+app.use("/api/network", networkRoutes);
 
+      
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {

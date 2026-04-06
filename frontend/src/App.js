@@ -6,6 +6,10 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import PostItem from './pages/PostItem';
 import MyListings from './pages/MyListings';
+import MessMenu from './pages/MessMenu';
+import BusSchedule from './pages/BusSchedule';
+import NetworkSetup from './pages/NetworkSetup';
+import Complaints from './pages/Complaints';
 
 function App() {
   return (
@@ -18,6 +22,14 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/post" element={<PostItem />} />
           <Route path="/my-listings" element={<MyListings />} />
+          <Route path="/mess" element={<MessMenu />} />
+          <Route path="/bus" element={<BusSchedule />} />
+          <Route path="/network" element={<NetworkSetup />} />
+          <Route path="/complaints" element={<Complaints />} />
+
+
+
+
 
         </Routes>
       </div>

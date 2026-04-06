@@ -35,6 +35,10 @@ function Navbar() {
           <Link to="/" className="nav-link" onClick={closeMobileMenu}>Home</Link>
           {isLoggedIn && <Link to="/post" className="nav-link" onClick={closeMobileMenu}>Sell Item</Link>}
           {isLoggedIn && <Link to="/my-listings" className="nav-link" onClick={closeMobileMenu}>My Listings</Link>}
+          {isLoggedIn && <Link to="/mess" className="nav-link" onClick={closeMobileMenu}>Mess Menu</Link>}
+          {isLoggedIn && <Link to="/bus" className="nav-link" onClick={closeMobileMenu}>Bus Schedule</Link>}
+          {isLoggedIn && <Link to="/network" className="nav-link" onClick={closeMobileMenu}>Network Setup</Link>}
+          {isLoggedIn && <Link to="/complaints" className="nav-link" onClick={closeMobileMenu}>Complaints</Link>}
         </div>
       </div>
       <div className="navbar-right">
