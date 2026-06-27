@@ -39,6 +39,8 @@ function Navbar() {
           {isLoggedIn && <Link to="/bus" className="nav-link" onClick={closeMobileMenu}>Bus Schedule</Link>}
           {isLoggedIn && <Link to="/network" className="nav-link" onClick={closeMobileMenu}>Network Setup</Link>}
           {isLoggedIn && <Link to="/complaints" className="nav-link" onClick={closeMobileMenu}>Complaints</Link>}
+          {isLoggedIn && <Link to="/upload" className="nav-link" onClick={closeMobileMenu}>Upload Document</Link>}
+          {isLoggedIn && <Link to="/ai" className="nav-link" onClick={closeMobileMenu}>Campus AI</Link>}
         </div>
       </div>
       <div className="navbar-right">

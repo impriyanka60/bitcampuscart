@@ -10,6 +10,8 @@ import MessMenu from './pages/MessMenu';
 import BusSchedule from './pages/BusSchedule';
 import NetworkSetup from './pages/NetworkSetup';
 import Complaints from './pages/Complaints';
+import DocumentUpload from './components/DocumentUpload';
+import CampusAIChat from './components/CampusAichat';
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
           <Route path="/bus" element={<BusSchedule />} />
           <Route path="/network" element={<NetworkSetup />} />
           <Route path="/complaints" element={<Complaints />} />
-
-
+          <Route path="/upload" element={<DocumentUpload />} />
+          <Route path="/ai" element={<CampusAIChat />} />
 
 
 

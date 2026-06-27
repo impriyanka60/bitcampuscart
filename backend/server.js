@@ -31,7 +31,8 @@ app.use('/api/mess', messRoutes);
 app.use('/api/bus', bussRoutes);
 app.use("/api/network", networkRoutes);
 
-      
+   // In your main server.js
+app.use("/api/ai", require("./routes/ai"));   
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
